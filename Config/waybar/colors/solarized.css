@@ -1,0 +1,24 @@
+/* Arka Plan Tonları (Gruvbox Dark - En koyudan açığa) */
+@define-color bg0 #282828; /* --bg-1 (Opak) */
+@define-color bg1 #3c3836; /* Ara ton */
+@define-color bg2 #504945; /* --border */
+@define-color bg3 #665c54; /* --text-disabled yakını */
+@define-color bg4 #7c6f64;
+
+/* Ana Renkler (Verdiğin listede renk olmadığı için Gruvbox renkleri eklendi) */
+@define-color red #cc241d;
+@define-color orange #d65d0e;
+@define-color yellow #d79921;
+@define-color green #98971a;
+@define-color aqua #689d6a;
+@define-color blue #458588;
+@define-color purple #b16286;
+@define-color violet #b16286;
+
+/* Ön Plan (Yazı Rengi) */
+@define-color fg #ebdbb2; /* --text */
+
+/* Gri Tonları */
+@define-color grey0 #7c6f64;
+@define-color grey1 #928374;
+@define-color grey2 #a89984;

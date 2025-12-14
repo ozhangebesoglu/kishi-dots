@@ -1,0 +1,53 @@
+/* --- Ana Pencere --- */
+window {
+    font-family: "JetBrainsMono Nerd Font";
+    font-size: 14px;
+    background-color: rgba(40, 40, 40, 0.85); /* Hafif şeffaf siyah */
+}
+
+/* --- Tüm Butonlar --- */
+button {
+    background-color: #282828; /* Gruvbox Koyu */
+    color: #ebdbb2;            /* Yazı rengi */
+    border: 3px solid #d79921; /* Turuncu kenarlık */
+    border-radius: 15px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 25%;
+    margin: 10px;
+    transition: box-shadow 0.2s ease-in-out, background-color 0.2s ease-in-out;
+}
+
+/* --- Mouse Üzerine Gelince --- */
+button:hover {
+    background-color: #d79921; /* Turuncu */
+    color: #282828;            /* Siyah yazı */
+    outline-style: none;
+}
+
+/* --- İKON TANIMLAMALARI --- */
+/* Wlogout kurulduğunda ikonlar genellikle /usr/share/wlogout/icons altındadır */
+
+#lock {
+    background-image: image(url("/usr/share/wlogout/icons/lock.png"));
+}
+
+#logout {
+    background-image: image(url("/usr/share/wlogout/icons/logout.png"));
+}
+
+#suspend {
+    background-image: image(url("/usr/share/wlogout/icons/suspend.png"));
+}
+
+#hibernate {
+    background-image: image(url("/usr/share/wlogout/icons/hibernate.png"));
+}
+
+#shutdown {
+    background-image: image(url("/usr/share/wlogout/icons/shutdown.png"));
+}
+
+#reboot {
+    background-image: image(url("/usr/share/wlogout/icons/reboot.png"));
+}

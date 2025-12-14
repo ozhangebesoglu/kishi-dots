@@ -1,0 +1,144 @@
+configuration {
+    modi:                       "drun,run,filebrowser";
+    show-icons:                 true;
+    display-drun:               "  Apps";
+    display-run:                "  Run";
+    display-filebrowser:        "  Files";
+    display-window:             "  Windows";
+    drun-display-format:        "{name}";
+}
+
+* {
+    font:                        "JetBrainsMono Nerd Font Bold 11";
+    background:                  #282828;
+    background-alt:              #3c3836;
+    foreground:                  #ebdbb2;
+    selected:                    #d79921;
+    active:                      #fabd2f;
+    urgent:                      #cc241d;
+}
+
+window {
+    transparency:                "real";
+    location:                    center;
+    anchor:                      center;
+    fullscreen:                  false;
+    width:                       700px;
+    x-offset:                    0px;
+    y-offset:                    0px;
+
+    enabled:                     true;
+    margin:                      0px;
+    padding:                     0px;
+    border:                      2px solid;
+    border-radius:               12px;
+    border-color:                @selected;
+    cursor:                      "default";
+    background-color:            @background;
+}
+
+mainbox {
+    enabled:                     true;
+    spacing:                     10px;
+    margin:                      0px;
+    padding:                     20px;
+    border:                      0px solid;
+    border-radius:               0px 0px 0px 0px;
+    border-color:                @selected;
+    background-color:            transparent;
+    children:                    [ "inputbar", "listview" ];
+}
+
+inputbar {
+    enabled:                     true;
+    spacing:                     10px;
+    margin:                      0px;
+    padding:                     0px;
+    border:                      0px solid;
+    border-radius:               0px;
+    border-color:                @selected;
+    background-color:            transparent;
+    text-color:                  @foreground;
+    children:                    [ "prompt", "entry" ];
+}
+
+prompt {
+    enabled:                     true;
+    background-color:            @selected;
+    text-color:                  @background;
+    padding:                     10px;
+    border-radius:               8px;
+}
+
+entry {
+    enabled:                     true;
+    background-color:            @background-alt;
+    text-color:                  @foreground;
+    cursor:                      text;
+    placeholder:                 "Ara...";
+    placeholder-color:           inherit;
+    padding:                     10px;
+    border-radius:               8px;
+}
+
+listview {
+    enabled:                     true;
+    columns:                     1;
+    lines:                       8;
+    cycle:                       true;
+    dynamic:                     true;
+    scrollbar:                   false;
+    layout:                      vertical;
+    reverse:                     false;
+    fixed-height:                true;
+    fixed-columns:               true;
+    
+    spacing:                     5px;
+    margin:                      0px;
+    padding:                     0px;
+    border:                      0px solid;
+    border-radius:               0px;
+    border-color:                @selected;
+    background-color:            transparent;
+    text-color:                  @foreground;
+    cursor:                      "default";
+}
+
+element {
+    enabled:                     true;
+    spacing:                     10px;
+    margin:                      0px;
+    padding:                     8px;
+    border:                      0px solid;
+    border-radius:               8px;
+    border-color:                @selected;
+    background-color:            transparent;
+    text-color:                  @foreground;
+    cursor:                      pointer;
+}
+
+element normal.normal {
+    background-color:            transparent;
+    text-color:                  @foreground;
+}
+
+element selected.normal {
+    background-color:            @background-alt;
+    text-color:                  @selected;
+}
+
+element-icon {
+    background-color:            transparent;
+    text-color:                  inherit;
+    size:                        24px;
+    cursor:                      inherit;
+}
+
+element-text {
+    background-color:            transparent;
+    text-color:                  inherit;
+    highlight:                   inherit;
+    cursor:                      inherit;
+    vertical-align:              0.5;
+    horizontal-align:            0.0;
+}

@@ -1,0 +1,36 @@
+{
+    "label" : "lock",
+    "action" : "loginctl lock-session",
+    "text" : "Kilitle",
+    "keybind" : "l"
+}
+{
+    "label" : "hibernate",
+    "action" : "systemctl hibernate",
+    "text" : "Hazırda Beklet",
+    "keybind" : "h"
+}
+{
+    "label" : "logout",
+    "action" : "hyprctl dispatch exit",
+    "text" : "Çıkış Yap",
+    "keybind" : "e"
+}
+{
+    "label" : "shutdown",
+    "action" : "systemctl poweroff",
+    "text" : "Kapat",
+    "keybind" : "s"
+}
+{
+    "label" : "suspend",
+    "action" : "systemctl suspend",
+    "text" : "Uyku",
+    "keybind" : "u"
+}
+{
+    "label" : "reboot",
+    "action" : "systemctl reboot",
+    "text" : "Yeniden Başlat",
+    "keybind" : "r"
+}

@@ -1,0 +1,155 @@
+/* GRUVBOX VARIABLES */
+@define-color bg #282828;
+@define-color bg2 #3c3836;
+@define-color fg #ebdbb2;
+@define-color red #cc241d;
+@define-color green #98971a;
+@define-color yellow #d79921;
+@define-color blue #458588;
+@define-color purple #b16286;
+@define-color aqua #689d6a;
+@define-color orange #d65d0e;
+@define-color gray #a89984;
+
+* {
+    border: none;
+    font-family: "JetBrainsMono Nerd Font", Roboto, Helvetica, Arial, sans-serif;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+window#waybar {
+    background-color: transparent;
+    transition-property: background-color;
+    transition-duration: .5s;
+}
+
+/* --- ADALAR (Groups) --- */
+.modules-left,
+.modules-center,
+.modules-right {
+    background-color: @bg;
+    border: 2px solid @bg2;
+    border-radius: 15px;
+    padding: 2px 5px;
+}
+
+.modules-center {
+    padding: 2px 10px;
+}
+
+/* --- WORKSPACES --- */
+#workspaces button {
+    padding: 0 5px;
+    background-color: transparent;
+    color: @gray;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+}
+
+#workspaces button:hover {
+    color: @fg;
+    background-color: @bg2;
+}
+
+#workspaces button.active {
+    color: @fg;
+    background-color: @bg2;
+    min-width: 30px;
+}
+
+#workspaces button.urgent {
+    color: @red;
+}
+
+/* --- MÜZİK (Mpris) --- */
+#mpris {
+    background-color: @bg2;
+    color: @fg;
+    border-radius: 10px;
+    padding: 0 10px;
+    margin-left: 10px;
+    /* Workspaces'den uzaklaşsın */
+}
+
+/* --- DONANIM VE SİSTEM --- */
+#cpu,
+#memory,
+#custom-gpu,
+#pulseaudio,
+#network,
+#battery,
+#clock,
+#tray {
+    padding: 0 8px;
+    margin: 0 2px;
+}
+
+#cpu {
+    color: @orange;
+}
+
+#memory {
+    color: @aqua;
+}
+
+#custom-gpu {
+    color: @green;
+}
+
+#pulseaudio {
+    color: @yellow;
+}
+
+#pulseaudio.muted {
+    color: @gray;
+}
+
+#network {
+    color: @purple;
+}
+
+#battery {
+    color: @fg;
+}
+
+#battery.charging {
+    color: @green;
+}
+
+#battery.warning {
+    color: @orange;
+}
+
+#battery.critical {
+    color: @red;
+    animation-name: blink;
+    animation-duration: 0.5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+#clock {
+    color: @blue;
+}
+
+/* --- BİLDİRİM İKONU --- */
+#custom-notification {
+    font-family: "JetBrainsMono Nerd Font";
+    font-size: 16px;
+    color: @fg;
+    padding-right: 5px;
+    margin-left: 10px;
+    border-left: 2px solid @bg2;
+    padding-left: 10px;
+}
+
+#tray>.passive {
+    -gtk-icon-effect: dim;
+}
+
+#tray>.needs-attention {
+    -gtk-icon-effect: highlight;
+    background-color: @red;
+}

@@ -1,0 +1,89 @@
+/* Gruvbox Wallpaper Selector Theme */
+
+configuration {
+    show-icons:                 true; 
+}
+
+* {
+    font:                        "JetBrainsMono Nerd Font 12";
+    background:                  #282828;
+    background-alt:              #3c3836;
+    foreground:                  #ebdbb2;
+    selected:                    #d79921; /* Turuncu */
+    active:                      #fabd2f;
+    urgent:                      #cc241d;
+}
+
+window {
+    transparency:                "real";
+    location:                    center;
+    anchor:                      center;
+    fullscreen:                  false;
+    width:                       600px; /* Biraz geniş olsun */
+    height:                      400px;
+    
+    border:                      2px solid;
+    border-radius:               12px;
+    border-color:                @selected;
+    background-color:            @background;
+    padding:                     10px;
+}
+
+mainbox {
+    enabled:                     true;
+    spacing:                     10px;
+    background-color:            transparent;
+    children:                    [ "inputbar", "listview" ];
+}
+
+inputbar {
+    enabled:                     true;
+    background-color:            @background-alt;
+    border-radius:               8px;
+    padding:                     10px;
+    children:                    [ "prompt", "entry" ];
+}
+
+prompt {
+    background-color:            transparent;
+    text-color:                  @selected;
+    padding:                     0 10px 0 0;
+    font:                        "JetBrainsMono Nerd Font Bold 12";
+}
+
+entry {
+    background-color:            transparent;
+    text-color:                  @foreground;
+    placeholder:                 "Ara...";
+    placeholder-color:           #928374;
+}
+
+listview {
+    columns:                     1;
+    lines:                       8;
+    cycle:                       true;
+    dynamic:                     true;
+    scrollbar:                   true;
+    layout:                      vertical;
+    spacing:                     5px;
+    background-color:            transparent;
+}
+
+element {
+    background-color:            transparent;
+    text-color:                  @foreground;
+    border-radius:               6px;
+    padding:                     8px 10px;
+    cursor:                      pointer;
+}
+
+element selected.normal {
+    background-color:            @selected;
+    text-color:                  @background;
+}
+
+element-text {
+    background-color:            transparent;
+    text-color:                  inherit;
+    vertical-align:              0.5;
+}

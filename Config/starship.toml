@@ -1,0 +1,43 @@
+format = """
+$directory\
+$git_branch\
+$git_status\
+$package\
+$golang\
+$nodejs\
+$rust\
+$python\
+$line_break\
+$character"""
+
+# --- Klasör Rengi (Gruvbox Sarısı) ---
+[directory]
+style = "bold #d79921"
+read_only = " "
+truncation_length = 3
+truncate_to_repo = false
+
+# --- Ok İşareti (Başarılı: Yeşil, Hata: Kırmızı) ---
+[character]
+success_symbol = "[➜](bold #b8bb26)"
+error_symbol = "[➜](bold #cc241d)"
+
+# --- Git Dalları (Mor yerine Gri/Aqua) ---
+[git_branch]
+style = "bold #83a598"
+symbol = " "
+
+# --- Paket Versiyonları (Gereksiz kalabalığı kapatalım) ---
+[package]
+disabled = true
+
+# --- Dillerin Renkleri (Gruvbox Uyumlu) ---
+[python]
+style = "bold #fabd2f"
+symbol = " "
+[golang]
+style = "bold #8ec07c"
+symbol = " "
+[nodejs]
+style = "bold #fabd2f"
+symbol = " "
