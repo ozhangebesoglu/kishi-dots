@@ -19,6 +19,38 @@
 * **Duvar Kağıdı:** Waypaper + SWWW (Animasyonlu geçişler)
 * **Diğer:** Wlogout (Çıkış menüsü), SwayNC (Bildirim merkezi), Hypridle (Otomatik kilit)
 
+### 🎛️ Kishi Settings
+
+Hyprland ayarlarınızı grafik arayüz üzerinden kolayca yönetebileceğiniz özel bir uygulama!
+
+**Şu an mevcut özellikler:**
+- ✅ Boşluklar (Gaps) ayarlama (İç/Dış)
+- ✅ Kenarlık kalınlığı ve köşe yuvarlaklığı
+- ✅ Kısayol tuşlarını görüntüleme
+- ✅ Gerçek zamanlı Hyprland yapılandırması güncelleme
+
+### 🚧 Gelecek Özellikler
+
+#### Kishi Settings için planlananlar:
+- [ ] **Tema Yöneticisi:** Farklı Gruvbox varyantları arasında geçiş (Dark/Light/Soft)
+- [ ] **Animasyon Ayarları:** Pencere animasyonlarını özelleştirme
+- [ ] **Workspace Yönetimi:** Workspace düzeni ve davranışlarını ayarlama
+- [ ] **Pencere Kuralları:** Uygulamalara özel pencere davranışları tanımlama
+- [ ] **Kısayol Düzenleyici:** Yeni kısayollar ekleme ve düzenleme
+- [ ] **Waybar Özelleştirme:** Modül görünürlüğü ve konumları
+- [ ] **Monitör Ayarları:** Çoklu monitör yapılandırması
+- [ ] **Başlangıç Uygulamaları:** Autostart uygulamalarını yönetme
+- [ ] **Yedekleme/Geri Yükleme:** Ayarları yedekleme ve geri yükleme
+- [ ] **Profil Yönetimi:** Farklı kullanım senaryoları için profiller
+
+#### Genel yapılandırma geliştirmeleri:
+- [ ] **Rofi Temaları:** Daha fazla Rofi tema seçeneği
+- [ ] **Duvar Kağıdı Koleksiyonu:** Genişletilmiş Gruvbox duvar kağıdı seti
+- [ ] **Hyprlock Widget'ları:** Hava durumu ve sistem bilgisi widget'ları
+- [ ] **SwayNC Temaları:** Özelleştirilmiş bildirim görünümleri
+- [ ] **Ses/Parlaklık OSD:** Ekran üstü bildirimler için özel tasarım
+- [ ] **Waybar Modülleri:** Müzik oynatıcı, sistem monitörü gibi ek modüller
+
 ### 📦 Kurulum (Gereksinimler)
 Bu yapılandırmayı kullanmak için aşağıdaki paketlerin sisteminizde yüklü olması gerekir (Arch Linux / Yay):
 
@@ -56,6 +88,38 @@ yay -S gruvbox-dark-gtk-theme gruvbox-plus-icon-theme-git bibata-cursor-theme
 * **Lock Screen:** Hyprlock (With music widget and artwork)
 * **Wallpaper:** Waypaper + SWWW (Animated transitions)
 * **Others:** Wlogout (Logout menu), SwayNC (Notification center), Hypridle (Auto lock)
+
+### 🎛️ Kishi Settings 
+
+A custom GUI application to easily manage your Hyprland settings!
+
+**Currently available features:**
+- ✅ Gaps adjustment (Inner/Outer)
+- ✅ Border size and corner rounding
+- ✅ View keyboard shortcuts
+- ✅ Real-time Hyprland configuration updates
+
+### 🚧 Upcoming Features
+
+#### Planned for Kishi Settings:
+- [ ] **Theme Manager:** Switch between Gruvbox variants (Dark/Light/Soft)
+- [ ] **Animation Settings:** Customize window animations
+- [ ] **Workspace Management:** Configure workspace layouts and behaviors
+- [ ] **Window Rules:** Define app-specific window behaviors
+- [ ] **Keybind Editor:** Add and edit custom keybindings
+- [ ] **Waybar Customization:** Module visibility and positioning
+- [ ] **Monitor Settings:** Multi-monitor configuration
+- [ ] **Startup Applications:** Manage autostart apps
+- [ ] **Backup/Restore:** Backup and restore settings
+- [ ] **Profile Management:** Profiles for different use cases
+
+#### General configuration improvements:
+- [ ] **Rofi Themes:** More Rofi theme options
+- [ ] **Wallpaper Collection:** Extended Gruvbox wallpaper set
+- [ ] **Hyprlock Widgets:** Weather and system info widgets
+- [ ] **SwayNC Themes:** Custom notification appearances
+- [ ] **Audio/Brightness OSD:** Custom on-screen display design
+- [ ] **Waybar Modules:** Additional modules like music player, system monitor
 
 ### 📦 Installation (Requirements)
 To use this configuration, ensure the following packages are installed (Arch Linux / Yay):
