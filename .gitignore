@@ -1,0 +1,6 @@
+Plan.md
+venv/
+*.log
+
+
+config error file /home/ozhan/.config/hypr/themes/wallpaper_flower_3_colors.conf at line 10: config option <decoration:col.shadow> does not exist.

@@ -1,0 +1,270 @@
+/* Kishi Settings Dynamic Theme */
+/* Auto-generated from wallpaper: yellow_kyoto.jpg */
+/* Mode: Light */
+
+/* Renk değişkenleri */
+@define-color kishi_bg #f7eee5;
+@define-color kishi_bg0 #f2e9e1;
+@define-color kishi_bg1 #eae1da;
+@define-color kishi_bg2 #e0d8d0;
+@define-color kishi_fg #3f362e;
+@define-color kishi_red #5f1111;
+@define-color kishi_orange #542700;
+@define-color kishi_yellow #a28b3d;
+@define-color kishi_green #115f11;
+@define-color kishi_aqua #115f5f;
+@define-color kishi_blue #11115f;
+@define-color kishi_purple #5f115f;
+@define-color text_color #1d1d1d;
+@define-color text_secondary #505050;
+@define-color card_bg #eae1da;
+@define-color row_bg #e0d8d0;
+
+/* Libadwaita renk override'ları - ÖNEMLİ */
+@define-color accent_bg_color #11115f;
+@define-color accent_fg_color #ffffff;
+@define-color accent_color #11115f;
+@define-color view_bg_color #f7eee5;
+@define-color view_fg_color #1d1d1d;
+@define-color window_bg_color #f2e9e1;
+@define-color window_fg_color #1d1d1d;
+@define-color headerbar_bg_color #f2e9e1;
+@define-color headerbar_fg_color #1d1d1d;
+@define-color card_bg_color #eae1da;
+@define-color card_fg_color #1d1d1d;
+@define-color popover_bg_color #eae1da;
+@define-color popover_fg_color #1d1d1d;
+@define-color dialog_bg_color #eae1da;
+@define-color dialog_fg_color #1d1d1d;
+
+/* Ana pencere */
+window, window.background {
+    background-color: #f2e9e1;
+    color: #1d1d1d;
+}
+
+/* Tüm içerik alanları */
+.content, scrolledwindow, viewport {
+    background-color: #f2e9e1;
+    color: #1d1d1d;
+}
+
+/* PreferencesGroup - Ana kart container */
+preferencesgroup {
+    background-color: transparent;
+    color: #1d1d1d;
+}
+
+preferencesgroup > box {
+    background-color: transparent;
+}
+
+preferencesgroup > box > label {
+    color: #1d1d1d;
+}
+
+/* Boxed List - Kart içindeki liste */
+list.boxed-list {
+    background-color: #eae1da;
+    border-radius: 12px;
+}
+
+list.boxed-list > row {
+    background-color: #e0d8d0;
+    color: #1d1d1d;
+}
+
+list.boxed-list > row:first-child {
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+}
+
+list.boxed-list > row:last-child {
+    border-bottom-left-radius: 12px;
+    border-bottom-right-radius: 12px;
+}
+
+/* ActionRow - Her satır */
+row.activatable {
+    background-color: #e0d8d0;
+    color: #1d1d1d;
+}
+
+row.activatable:hover {
+    background-color: alpha(#1d1d1d, 0.05);
+}
+
+row {
+    color: #1d1d1d;
+    background-color: #e0d8d0;
+}
+
+/* Row içindeki tüm yazılar */
+row label, row .title, row .subtitle {
+    color: #1d1d1d;
+}
+
+row .subtitle {
+    color: #505050;
+}
+
+/* Card stilleri */
+.card {
+    background-color: #eae1da;
+    border-radius: 12px;
+    color: #1d1d1d;
+}
+
+/* FlowBox (wallpaper grid) */
+flowboxchild {
+    border-radius: 8px;
+    padding: 5px;
+}
+
+flowboxchild:selected {
+    background-color: alpha(#11115f, 0.3);
+    border: 2px solid #11115f;
+}
+
+/* Headerbar */
+headerbar {
+    background-color: #f2e9e1;
+    color: #1d1d1d;
+}
+
+headerbar * {
+    color: #1d1d1d;
+}
+
+/* Sidebar */
+.navigation-sidebar {
+    background-color: #f7eee5;
+    color: #2d2d2d;
+}
+
+.navigation-sidebar row {
+    color: #2d2d2d;
+    background-color: transparent;
+}
+
+.navigation-sidebar row:selected {
+    background-color: alpha(#11115f, 0.25);
+}
+
+.navigation-sidebar row label {
+    color: #2d2d2d;
+}
+
+/* SpinRow ve diğer özel satırlar */
+spinrow, spinrow > box {
+    background-color: #e0d8d0;
+    color: #1d1d1d;
+}
+
+/* SpinButton */
+spinbutton {
+    background-color: alpha(#1d1d1d, 0.1);
+    color: #1d1d1d;
+}
+
+spinbutton text {
+    color: #1d1d1d;
+}
+
+spinbutton button {
+    color: #1d1d1d;
+}
+
+/* Butonlar */
+button {
+    color: #1d1d1d;
+}
+
+button.suggested-action {
+    background-color: #11115f;
+    color: #ffffff;
+}
+
+button.destructive-action {
+    background-color: #5f1111;
+    color: #ffffff;
+}
+
+button.circular {
+    color: #1d1d1d;
+}
+
+/* Toggle butonlar */
+togglebutton {
+    color: #1d1d1d;
+}
+
+togglebutton:checked {
+    background-color: alpha(#11115f, 0.3);
+    color: #1d1d1d;
+}
+
+/* Switch */
+switch {
+    background-color: alpha(#1d1d1d, 0.2);
+}
+
+switch:checked {
+    background-color: #115f11;
+}
+
+/* Scale (Slider) */
+scale trough {
+    background-color: alpha(#1d1d1d, 0.2);
+}
+
+scale trough highlight {
+    background-color: #11115f;
+}
+
+scale slider {
+    background-color: #ffffff;
+}
+
+/* Entry */
+entry {
+    background-color: alpha(#1d1d1d, 0.1);
+    color: #1d1d1d;
+}
+
+entry text {
+    color: #1d1d1d;
+}
+
+/* Labels - genel */
+label {
+    color: #1d1d1d;
+}
+
+/* Progress bar */
+progressbar > trough > progress {
+    background-color: #11115f;
+}
+
+/* Scrollbar */
+scrollbar slider {
+    background-color: alpha(#1d1d1d, 0.3);
+}
+
+scrollbar slider:hover {
+    background-color: alpha(#11115f, 0.5);
+}
+
+/* ExpanderRow */
+row.expander {
+    background-color: #e0d8d0;
+    color: #1d1d1d;
+}
+
+row.expander list {
+    background-color: #eae1da;
+}
+
+row.expander image.expander-row-arrow {
+    color: #1d1d1d;
+}
